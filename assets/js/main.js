@@ -1,8 +1,92 @@
+let btnMore=document.querySelector(".btnMore");
 /*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+function learnMore(){
+	let x=
+	`<p style="word-spacing: 10px;font-weight: 500;font-size: larger;" class="paragraph">شركة نقل البضائع "المدينة المنورة" هي شركة عالمية رائدة في مجال خدمات النقل والشحن. تأسست الشركة برؤية واضحة لتلبية احتياجات العملاء في مجال نقل البضائع وتوصيلها بسرعة وأمان إلى جميع محافظات مصر.
+		تتميز شركة نقل البضائع "المدينة المنورة" بخبرتها الواسعة وتاريخها الممتد في صناعة النقل والشحن. تعتمد الشركة على فريق عمل محترف ومدرب تدريباً عالياً، يتمتع بالمعرفة والمهارات اللازمة لضمان تنفيذ عمليات النقل بكفاءة وفعالية.</p>`;
+	
+		let y=document.querySelector("paragraph");
+	y=x;
+}
 */
+// btnMore.addEventListener("click",learnMore());
+
+// btnMore.addEventListener("click", function(event){
+// 	document.getElementsByClassName("paragraph").innerHTML = 
+// 	`<p style="word-spacing: 10px;font-weight: 500;font-size: larger;" class="paragraph">شركة نقل البضائع "المدينة المنورة" هي شركة عالمية رائدة في مجال خدمات النقل والشحن. تأسست الشركة برؤية واضحة لتلبية احتياجات العملاء في مجال نقل البضائع وتوصيلها بسرعة وأمان إلى جميع محافظات مصر.
+// 		تتميز شركة نقل البضائع "المدينة المنورة" بخبرتها الواسعة وتاريخها الممتد في صناعة النقل والشحن. تعتمد الشركة على فريق عمل محترف ومدرب تدريباً عالياً، يتمتع بالمعرفة والمهارات اللازمة لضمان تنفيذ عمليات النقل بكفاءة وفعالية.</p>`;
+
+//   });
+let textPar=document.querySelector(".paragraph").innerHTML;
+
+  btnMore.addEventListener("click",function(){
+	if(document.querySelector(".btnMore").textContent==="Learn More"){
+	document.querySelector(".paragraph").innerHTML=`<p style="word-spacing: 10px;font-weight: 500;font-size: larger;" class="paragraph">شركة نقل البضائع "المدينة المنورة" هي شركة عالمية رائدة في مجال خدمات النقل والشحن. تأسست الشركة برؤية واضحة لتلبية احتياجات العملاء في مجال نقل البضائع وتوصيلها بسرعة وأمان إلى جميع محافظات مصر.
+		تتميز شركة نقل البضائع "المدينة المنورة" بخبرتها الواسعة وتاريخها الممتد في صناعة النقل والشحن. تعتمد الشركة على فريق عمل محترف ومدرب تدريباً عالياً، يتمتع بالمعرفة والمهارات اللازمة لضمان تنفيذ عمليات النقل بكفاءة وفعالية.</p>`;
+		// function to(){
+			document.querySelector(".btnMore").innerHTML=`<li class="btnMore"><a class="btn btn-warning">Learn Less</a></li>`;
+		// }
+		// setTimeout(to,3000);
+		// document.querySelector(".btnMore").textContent=="Learn Less";
+		console.log(document.querySelector(".btnMore").textContent);
+		console.log(1);
+	}
+	else{
+		document.querySelector(".paragraph").innerHTML=`<p style="word-spacing: 10px;font-weight: 500;font-size: larger;" class="paragraph">شركة نقل البضائع "المدينة المنورة" هي شركة عالمية رائدة في مجال خدمات النقل والشحن. تأسست الشركة برؤية واضحة لتلبية احتياجات العملاء في مجال نقل البضائع وتوصيلها بسرعة وأمان إلى جميع محافظات مصر....
+		</p>`;
+		document.querySelector(".btnMore").innerHTML=`<li class="btnMore"><a class="btn btn-warning">Learn More</a></li>`;
+		// document.querySelector(".btnMore").textContent=="Learn More";
+		console.log(document.querySelector(".btnMore").textContent);
+		console.log(2);
+	}
+	});
+let btnMore2=document.querySelector(".btnMore2");
+	btnMore2.addEventListener("click",function(){
+		if(document.querySelector(".moreLists").classList.contains("d-none")){
+			document.querySelector(".moreLists").classList.remove("d-none");
+			document.querySelector(".btnMore2").innerHTML=`<li class="btnMore2"><a main class="btn btn-warning">Learn Less</a></li>`;
+		}
+		else{
+			document.querySelector(".moreLists").classList.add("d-none");
+			document.querySelector(".btnMore2").innerHTML=`<li class="btnMore2"><a main class="btn btn-warning">Learn More</a></li>`;
+		}
+	})
+	let btnMore3=document.querySelector(".btnMore3");
+	btnMore3.addEventListener("click",function(){
+		if(btnMore3.textContent==="Learn More")
+		{
+			btnMore3.innerHTML=`<li class="btnMore3"><a main class="btn btn-warning">Learn Less</a></li>`;
+			document.querySelector(".par2").innerHTML=`<p class="content">شركتنا تتسم بالتميز والابتكار في مجال نقل وتوصيل البضائع، حيث نجمع بين الكفاءة العالية والخدمة الاحترافية. نفتخر بفريق متخصص يعمل بتفانٍ لضمان وصول منتجاتكم بأمان وفي الوقت المحدد.
+
+			نحن لسنا مجرد شركة نقل، بل شريك حقيقي يفهم احتياجات عملائنا ويسعى جاهدًا لتحقيق رضاهم. نضع الجودة في صلب اهتماماتنا، حيث نحرص على الحفاظ على سلامة وجودة المنتجات خلال عملية النقل.
+			
+			تجربة عملاءنا ليست مجرد توصيل، بل هي رحلة مميزة من الراحة والثقة. نحن هنا لنجعل كل عملية نقل تتسم بالسلاسة والفعالية. اعتمدوا علينا لتحقيق تجربة لا تنسى في عالم النقل والتوصيل.</p>`;
+		}
+		else{
+			btnMore3.innerHTML=`<li class="btnMore3"><a main class="btn btn-warning">Learn More</a></li>`;
+			document.querySelector(".par2").innerHTML=`<p class="content par2 ">شركتنا تتسم بالتميز والابتكار في مجال نقل وتوصيل البضائع، حيث نجمع بين الكفاءة العالية والخدمة الاحترافية. نفتخر بفريق متخصص يعمل بتفانٍ لضمان وصول منتجاتكم بأمان وفي الوقت المحدد.
+
+			نحن لسنا مجرد شركة نقل، بل شريك حقيقي يفهم احتياجات عملائنا ويسعى جاهدًا لتحقيق رضاهم. نضع الجودة في صلب اهتماماتنا، حيث نحرص على الحفاظ على سلامة وجودة المنتجات خلال عملية النقل.
+			.............</p>`;
+		}
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (function($) {
 
