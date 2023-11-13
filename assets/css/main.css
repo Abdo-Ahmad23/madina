@@ -2,9 +2,6 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 
-*{
-	transition: 1s;
-}
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3783,6 +3780,9 @@ input, select, textarea {
 
 
 		}
+		*{
+			transition: 1s;
+		}
 		#nav ul li a{
 			transition: 1s;
 		}
@@ -3792,7 +3792,7 @@ input, select, textarea {
 			border-radius: 70%;
 		}
 		.actions li{
-			transition: .5s;
+			transition: 1s;
 		}
 		.actions li:hover{
 			transform: scale(1.2);
@@ -3800,7 +3800,7 @@ input, select, textarea {
 			border-radius: 70%;
 		}
 		.caro{
-			transition: .5s;
+			transition: 1s;
 			display: inline-block;
 			border-radius: 50%;
 		}
@@ -3809,7 +3809,32 @@ input, select, textarea {
 		}
 		.ourTitle{
 			font-weight: 1000;
-			font-size: 1000px;
+			font-size: 5rem;
 			word-spacing: 10px;
 		}
+		.Parent{
+			display: flex;
+		}
+		.firstName{
+			word-spacing: 10px;
+			color: red;
+			justify-content: center;
+		}
+		._img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+		.fImg{
+			width: 20rem;
+			justify-content: center;
+			border-radius: 50%;
+		}
+		.Parent{
+			transition: 1s ease;
+		}
+		.Parent:hover{
+			transform: scale(1.2);
+		}
+
 		
